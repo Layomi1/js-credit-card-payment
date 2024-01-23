@@ -341,10 +341,8 @@ input::-webkit-inner-spin-button {
         flex-direction: row;
     }
 
-    .payment form > div.text {
-        padding-right: 1em;
     }
- }
+ 
 
  @media screen and (min-width: 992px) {
     header {
