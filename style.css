@@ -244,8 +244,9 @@ input::-webkit-inner-spin-button {
  }
 
 .payment .right {
-   max-width: 300px;
    width: 100%; 
+   max-width: 300px;
+  
 }
 
 .payment .card-virtual {
@@ -300,9 +301,10 @@ input::-webkit-inner-spin-button {
 
 .payment .right .receipt {
    position: relative;
-   padding: 2em 2em 2em;
+   padding: 8em 2em 2em;
    border-radius: 10px;
    background: var(--lighter-color);
+   margin-top: -120px;
 }
 
 .payment .right .receipt ul li {
@@ -330,21 +332,27 @@ input::-webkit-inner-spin-button {
 }
 
  @media screen and (min-width: 576px) {
+   
     .outer {
         padding: 4em;
+       
     }
 
     /* payment */
-   
+   .payment{
+      display: flex;
+      flex-direction: column-reverse; 
+      align-items: center;
+      
+   }
 
     .payment form > div {
         flex-direction: row;
     }
 
-    .payment form > div.text {
-        padding-right: 1em;
+
     }
- }
+ 
 
  @media screen and (min-width: 992px) {
     header {
@@ -357,13 +365,11 @@ input::-webkit-inner-spin-button {
     .payment {
         display: flex;
         flex-direction: row;
-        gap: 0;
     }
     
     .payment form > div { 
-      margin-bottom: 1em;
+      margin-bottom: 3em;
       display: flex;
-      flex-direction: column;
       align-items: stretch;
    } 
   
