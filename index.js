@@ -96,7 +96,7 @@ input_credit_card = function(input)
             });
 
             input.addEventListener('paste', function(e){
-                // a timeouy is needed to gt the new value pasted
+                // a timeout is needed to gt the new value pasted
                 setTimeout(function(){
                 format_and_pos('');
             }, 50)
